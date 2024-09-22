@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2? family=Poppins: wght@300;400; 500; 600; 700; 800; 900& display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
+}   
+body {
+    display: flex;
+}
+.nav__bar {
+    width: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+/*  Estilos de barra izquierda */
+/* LOGO */
+.logo img{
+  border-radius: 15px;
+  padding: 10px;
+  bottom:5px ;
+}
+.logo {
+  background-color: #0A5EFB;
+  border-radius:30px ;
+}
+/* Barra de navegacion */
+.nav-bg {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 3rem;
+  left: 20px;
+  
+}
+.nav-bg nav{
+  margin-top: 20px;
+}
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 3.3rem;
+  height: 75vh;
+  background-color: #fff;
+  border-top-left-radius: 23px;
+  border-top-right-radius: 23px;
+  border-bottom-left-radius: 23px;
+  border-bottom-right-radius: 23px;
+  gap: 2rem;
+  padding: 25px;
+  box-shadow: 4px 3px 9px 1px rgba(0,0,0,0.73);
+}
+.nav-menu a:hover{
+  background-color: black;
+  color: #fff;
+  border-radius: 34%;
+}
+
+.nav-item {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.bx{
+  font-size: 28px;
+}
+
+/* Línea vertical */
+.lin-vert {
+  width: 1px; 
+  height: 10rem; 
+  background-color: black; 
+  border: none;
+  margin: 0 auto; /* Centrar la línea horizontalmente */
+}
