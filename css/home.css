@@ -212,6 +212,26 @@ aside {
     color: #0d78cc;
 }
 
+.button-back{
+    position: absolute;
+    left: 4rem;
+    top: 50%;
+    transform: translate(0,-50%);
+    color: #fff;
+}
+
+.button-back i {
+    width: 5rem;
+    height: 5rem;
+    font-size: 5rem;
+    background-color: #0d78cc;
+    border-radius: 3rem;
+}
+
+.button-back i:hover {
+    background-color: #000;
+}
+
 .prendas__container > div {
     position: relative;
     width: 65%;
