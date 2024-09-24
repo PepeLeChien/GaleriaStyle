@@ -5,6 +5,7 @@
   --color-gray-dark: #56555e;
   --color-dark: #27282f;
   --color-primary: rgb(71, 7, 234);
+  --color-secundary:rgb(7, 75, 234);
   --color-success: rgb(34, 202, 75);
   --color-danger: rgb(255, 67, 54);
   --color-warning: rgb(234, 181, 7);
@@ -275,7 +276,7 @@ main aside .sidebar a span {
 }
 main aside .sidebar a.active {
   background: var(--color-white);
-  color: var(--color-primary);
+  color: var(--color-secundary);
 }
 
 main aside .sidebar a.active:before {
@@ -283,10 +284,10 @@ main aside .sidebar a.active:before {
   width: 6px;
   height: 100%;
   position: absolute;
-  background: var(--color-primary);
+  background: var(--color-secundary);
 }
 main aside .sidebar a:hover {
-  color: var(--color-primary);
+  color: var(--color-secundary);
 }
 main aside .sidebar a:hover span {
   margin-left: 2rem;
@@ -355,8 +356,6 @@ main section.middle .cards .card {
   transition: all 300ms ease;
   min-width: 22rem;
 }
-
-
 main section.middle .cards .card:nth-child(2){
   background: 
     linear-gradient(135deg, transparent 39%, #333333 50%, transparent 51%),
@@ -371,10 +370,9 @@ main section.middle .cards .card:nth-child(2){
   box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
 }
 main section.middle .cards .card:nth-child(3){
-  background-image: url(../pictures/tarjetaScotiabank.png);
+  background-image: url(../pictures/fondoInterbanck.jpg);
   background-position: center center; 
   background-size: cover;
-
   box-shadow: 0 2rem 3rem var(--color-danger-light);
 }
 main section.middle .cards .card:nth-child(4){
@@ -385,8 +383,12 @@ main section.middle .cards .card:nth-child(5){
   background:linear-gradient(#18c2bf,#71d2d7);
   box-shadow: 0 2rem 3rem var(--color-verde-light);
 }
-
-
+main section.middle .cards .card:nth-child(6){
+  background-image: url(../pictures/interbanckFondo.jpg);
+  background-position: center center; 
+  background-size: cover;
+  box-shadow: 0 2rem 3rem var(--color-success-light);
+}
 
 main section.middle .cards .card:hover{
   box-shadow: none;
