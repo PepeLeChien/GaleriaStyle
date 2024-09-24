@@ -14,8 +14,8 @@
   --color-success-light: rgba(34, 202, 75, 0.2);
   --color-danger-light: rgba(255, 67, 54, 0.2);
   --color-purple-light: rgba(160, 99, 245, 0.2);
-  --color-orange-light: rgba(245, 148, 99, 0.2);
-
+  --color-orange-light: rgba(244, 127, 69, 0.2);
+  --color-verde-light: rgba(51, 231, 219, 0.2);
 
 
   --card-padding: 1.6rem;
@@ -371,12 +371,23 @@ main section.middle .cards .card:nth-child(2){
   box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
 }
 main section.middle .cards .card:nth-child(3){
-  background-image: url(../images/tarjetaScotiabank.png);
+  background-image: url(../pictures/tarjetaScotiabank.png);
   background-position: center center; 
   background-size: cover;
 
   box-shadow: 0 2rem 3rem var(--color-danger-light);
 }
+main section.middle .cards .card:nth-child(4){
+  background:linear-gradient(#512b9c,#8357ce);
+  box-shadow: 0 2rem 3rem var(--color-primary-light);
+}
+main section.middle .cards .card:nth-child(5){
+  background:linear-gradient(#18c2bf,#71d2d7);
+  box-shadow: 0 2rem 3rem var(--color-verde-light);
+}
+
+
+
 main section.middle .cards .card:hover{
   box-shadow: none;
 }
