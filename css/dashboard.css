@@ -5,13 +5,14 @@
   --color-gray-dark: #56555e;
   --color-dark: #27282f;
   --color-primary: rgb(71, 7, 234);
-  --color-secundary:rgb(7, 75, 234);
+  --color-secundary:rgb(23, 80, 212);
   --color-success: rgb(34, 202, 75);
   --color-danger: rgb(255, 67, 54);
   --color-warning: rgb(234, 181, 7);
   --color-purple: rgb(160, 99, 245);
 
   --color-primary-light: rgba(71, 7, 234, 0.2);
+  --color-secundary-light: rgba(7, 45, 234, 0.2);
   --color-success-light: rgba(34, 202, 75, 0.2);
   --color-danger-light: rgba(255, 67, 54, 0.2);
   --color-purple-light: rgba(160, 99, 245, 0.2);
@@ -93,11 +94,17 @@ small {
 .text-muted {
   color: var(--color-gray-light);
 }
+.white{
+  color:var(--color-white);
+}
 .primary {
   color: var(--color-primary);
 }
 .danger {
   color: var(--color-danger);
+}
+.secundary{
+  color:var(--color-secundary)
 }
 .success {
   color: var(--color-success);
@@ -113,6 +120,10 @@ small {
 .bg-danger {
   background: var(--color-danger);
   box-shadow: 0 0.8rem 0.8rem var(--color-danger-light);
+}
+.bg-secundary {
+  background: var(--color-secundary);
+  box-shadow: 0 0.8rem 0.8rem var(--color-secundary-light);
 }
 .bg-success {
   background: var(--color-success);
@@ -140,6 +151,10 @@ small {
 
 .bg-success-light{
   background: var(--color-success-light);
+}
+
+.bg-secundary-light{
+  background:var(--color-secundary-light) ;
 }
 
 
@@ -528,6 +543,9 @@ main section.right .investments img{
   border-radius: 8rem;
   width: 2.9rem;
   height: 3rem;
+  /* Rellena todo el contenedor manteniendo la proporción de
+   la imagen, recortando los bordes si es necesario */
+  object-fit: cover; 
 }
 
 main section.right .investments .header{
