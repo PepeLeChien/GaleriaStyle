@@ -1,0 +1,48 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    background-color: #e8e8e8;
+}
+
+/*SECCION PRINCIPAL*/
+
+main {
+    padding: 3rem 4rem 3rem 1rem;
+}
+
+
+    /* Titulos */
+
+.titles__container h2{
+    font-size: 2.4rem;
+    font-family: 'Inter', 'Sans-serif';
+    font-weight: 900;
+    color: var(--primary-blue);
+}
+
+.titles__container div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titles__container p, 
+.titles__container a {
+    font-family: 'Inter', 'Sans-serif';
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #A7A5A5;
+}
+
+
+
+@media (max-width: 992px) { 
+
+    main {
+        padding: 1rem;
+    }
+
+
+}

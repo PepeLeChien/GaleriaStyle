@@ -1,21 +1,48 @@
 @import url("https://fonts.googleapis.com/css2? family=Poppins: wght@300;400; 500; 600; 700; 800; 900& display=swap");
+:root {
+    --primary-blue: #0A5EFB;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", "sans-serif";
 }   
+
+html {
+    font-size: 62.5%;
+}
+
 body {
     display: flex;
 }
-.nav__bar {
+
+header {
     width: 7%;
+}
+main {
+    width: 93%;
+}
+
+.nav__bar {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 
+/* Estilo barra responsive */
+
+.nav-resp {
+    display: none !important;
+}
+
+.nav-resp a {
+    font-size: 1.8rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
 
 /*  Estilos de barra izquierda */
 /* LOGO */
@@ -25,7 +52,7 @@ body {
   bottom:5px ;
 }
 .logo {
-  background-color: #0A5EFB;
+  background-color: var(--primary-blue);
   border-radius:30px ;
 }
 /* Barra de navegacion */
@@ -35,7 +62,6 @@ body {
   flex-direction: column;
   align-items: center;
   top: 3rem;
-  left: 20px;
   
 }
 .nav-bg nav{
@@ -62,7 +88,7 @@ body {
   border-radius: 34%;
 }
 
-.nav-item {
+.nav-item1 {
   width: 40px;
   height: 40px;
   display: flex;
@@ -84,4 +110,27 @@ body {
   background-color: black; 
   border: none;
   margin: 0 auto; /* Centrar la línea horizontalmente */
+}
+
+
+@media (max-width: 992px) { 
+
+    body {
+        display: block;
+    }
+
+    header {
+        width: 100%;
+    }
+    main {
+        width: 100%;
+    }
+
+    .nav-resp {
+        display: flex !important;
+    }
+
+    .nav__bar {
+        display: none;
+    }
 }
