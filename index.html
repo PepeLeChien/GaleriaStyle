@@ -13,30 +13,61 @@
     <!-- FUENTE ROBOT -->
     <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Roboto:ital,
     wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Home</title>
     
 </head>
 <body>
-    <section class="nav__bar">
-        <div class="nav-bg">
-            <!-- Logo -->
-            <div class="logo">
-                <img src="./pictures/LGOO OFICIAL.png" alt="Logo">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary nav-resp">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="#">
+                    <img src="../pictures/LGOO OFICIAL.png" alt="Bootstrap" width="30" height="24">
+                </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link"href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tiendas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cuenta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Notificaciones</a>
+                </li>
+                </ul>
             </div>
-            <!-- Navegación -->
-            <nav class="nav-menu">
-                <a href="#" class="nav-item"><i class='bx bxs-home'></i></a>
-                <a href="#" class="nav-item"><i class='bx bx-store'></i></a>
-                <a href="#" class="nav-item"><i class='bx bx-user' ></i></a>
-                <a href="#" class="nav-item"><i class='bx bx-bell' ></i></a>
-                <a href="#" class="nav-item"><i class='bx bx-like'></i></a>
-                <hr width="100%" class="lin-vert">
-                <a href="#" class="nav-item"><i class='bx bx-log-out' ></i></a>
-                <a href="#" class="nav-item"><i class='bx bxs-user-circle'></i></a>            
-            </nav>
-        </div>
-
-    </section>
+            </div>
+        </nav>
+    
+        <section class="nav__bar">
+            <div class="nav-bg">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="../pictures/LGOO OFICIAL.png" alt="Logo">
+                </div>
+                <!-- Navegación -->
+                <nav class="nav-menu">
+                    <a href="#" class="nav-item1"><i class='bx bxs-home'></i></a>
+                    <a href="#" class="nav-item1"><i class='bx bx-store'></i></a>
+                    <a href="#" class="nav-item1"><i class='bx bx-user' ></i></a>
+                    <a href="#" class="nav-item1"><i class='bx bx-bell' ></i></a>
+                    <a href="#" class="nav-item1"><i class='bx bx-like'></i></a>
+                    <hr width="100%" class="lin-vert">
+                    <a href="#" class="nav-item1"><i class='bx bx-log-out' ></i></a>
+                    <a href="#" class="nav-item1"><i class='bx bxs-user-circle'></i></a>            
+                </nav>
+    
+            </div>
+        </section>
+    </header>
     
 
     <main>
@@ -94,5 +125,7 @@
 
     </aside>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
