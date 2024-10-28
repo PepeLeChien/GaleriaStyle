@@ -1,0 +1,325 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    background-color: #e8e8e8;
+}
+
+
+/* Estilos para el dinero */
+
+.money {
+    font-weight: 700;
+    color: var(--primary-blue);
+}
+
+
+/*SECCION PRINCIPAL*/
+
+main {
+    padding: 3rem 4rem 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+    /* Titulos */
+
+.titles__container h2{
+    font-size: 2.4rem;
+    font-family: 'Inter', 'Sans-serif';
+    font-weight: 900;
+    color: var(--primary-blue);
+}
+
+.titles__container div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titles__container p, 
+.titles__container a {
+    font-family: 'Inter', 'Sans-serif';
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #A7A5A5;
+}
+
+/* TABLAS*/
+
+
+.tables__container {
+    display: flex;
+    flex-grow: 1;
+    padding-top: 2rem;
+    gap: 3rem;
+}
+
+    /* Tabla Productos */
+
+.cart__table {
+    width: 75%;
+    border-radius: 2rem;
+    background-color: #fff;
+    box-shadow: 4px 4px 9px 0px rgba(0,0,0,0.75);
+    overflow: hidden;
+}
+
+.titles {
+    display: flex;
+    background-color: #cdd7ea;
+    text-align: center;
+    height: 5rem;
+    align-items: center;
+}
+
+.titles p {
+    font-size: 1.6rem;
+    font-family: 'Inter', 'Sans-serif';
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 0;
+}
+
+.block1 {
+    width: 49%;
+}
+.block2 {
+    width: 13%;
+}
+.block3 {
+    width: 16%;
+}
+.block4 {
+    width: 11%;
+}
+.block5 {
+    width: 11%;
+}
+
+
+.item {
+    display: flex;
+    text-align: center;
+    height: 8rem;
+    align-items: center;
+    border-bottom: 1px solid #918E8E;
+}
+
+
+.product__sector {
+    display: flex;
+    flex-direction: row;
+    padding: 0 3rem;
+    gap: 3rem;
+    text-align: left;
+    align-items: center;
+}
+
+.product__sector div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.item p {
+    font-family: "Inter", "sans-serif";
+    font-size: 1.6rem;
+}
+
+.product__sector img {
+    width: 6.5rem;
+    height: 6.5rem;
+    background-color: #918E8E;
+}
+
+.item p {
+    margin: 0;
+}
+
+
+.contador {
+    display: flex;            
+    justify-content: space-evenly;    
+    align-items: center;      
+    margin: 0 auto;    
+    gap: 1rem;
+    background-color: #d9d9d9;
+    width: 80%;         
+}
+
+.contador div,
+.contador button {
+    font-family: "Inter", "sans-serif";
+    font-size: 1.8rem;
+}
+.contador button {
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 1rem;   
+}
+
+.trash--icon {
+    color: #766f6f;
+    cursor: pointer;
+}
+
+
+
+
+
+ /* Tabla precios */
+
+.prices__container {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.price__table {
+    flex-grow: 1;
+    border-radius: 2rem;
+    background-color: #fff;
+    box-shadow: 4px 4px 9px 0px rgba(0,0,0,0.75);
+    overflow: hidden;
+}
+.price__table .titles {
+    padding-left: 3rem;
+}
+
+.mounts {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 1rem;
+}
+
+.mounts div {
+    display: flex;
+    justify-content: space-between;
+}
+.mounts p {
+    font-size: 1.4rem;
+    font-family: "Inter", "sans-serif";
+    font-weight: bold;
+    color: #000;
+}
+
+.total {
+    border-top: 1px solid #918E8E;
+    padding-top: 2rem;
+}
+
+.total p{
+    color: var(--primary-blue);
+}
+
+.advise__div {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    height: 9rem;
+    border-radius: 2rem;
+    background-color: #cdd7ea;
+}
+.advise__div p {
+    font-family: "Inter", "sans-serif";
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #000;
+    margin: 0;
+}
+.advise__div span {
+    font-family: "Inter", "sans-serif";
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--primary-blue);
+}
+
+
+@media (max-width: 992px) { 
+
+    main {
+        padding: 1rem;
+    }
+
+
+    .tables__container {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .cart__table {
+        width: 100%;
+    }
+    
+    .prices__container {
+        width: 100%;
+    }
+
+    .product__sector {
+        display: flex;
+        flex-direction: row;
+        padding: 0 1rem;
+        gap: 3rem;
+        text-align: left;
+        align-items: center;
+    }
+
+    .advise__div {
+        padding: 2rem 3rem;
+        height: auto;
+    }
+    .advise__div p {
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+
+    .titles p {
+        font-size: 1.2rem;
+    }
+
+    .product__sector img {
+        display: none;
+    }
+
+    .item p {
+        font-size: 1.2rem;
+    }
+
+
+    .contador div,
+    .contador button {
+        font-size: 1.2rem;
+    }
+
+    .block1 {
+        width: 49%;
+    }
+    .block2 {
+        width: 14%;
+    }
+    .block3 {
+        width: 17%;
+    }
+    .block4 {
+        width: 12%;
+    }
+    .block5 {
+        width: 8%;
+    }
+
+    .trash--icon {
+        font-size: 2rem;
+    }
+
+
+} 

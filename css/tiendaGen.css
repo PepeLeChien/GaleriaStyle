@@ -1,0 +1,328 @@
+:root {
+    --fuente-inter: "Inter", sans-serif;
+
+    --primario: #0A5EFB;
+    --secundario: #007ACE;
+    --negro: #000;
+    --blanco: #FFF;
+
+    --bg-gris: #E8E8E8;
+
+    --letra-gris: #A8A6A6;
+
+    --linea-gris:#bcbaba52;
+}
+/* Establece el tamaño de fuente base a 10px 
+(62.5% de 16px), 
+facilitando el uso de unidades rem. */
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    font-family: var(--fuente-inter);
+    font-size: 1.6rem;
+    background-color: var(--bg-gris);
+    /* Elimina el margen predeterminado y 
+    añade un relleno alrededor de toda la página. */
+    margin: 0;
+    padding: 2rem;
+}
+/* Asegura que todas las imágenes sean responsive 
+y no excedan el ancho de su contenedor */
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* rea un contenedor centrado con un ancho máximo de 1200px 
+y un 95% de ancho en pantallas más pequeñas. */
+.contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto ;
+}
+
+.cuatro-columnas {
+    /* Crea un diseño de cuadrícula responsive que 
+    ajusta automáticamente
+     el número de columnas según el ancho disponible. */
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Añade espacio entre las tarjetas
+     y relleno alrededor de la cuadrícula. */
+    padding: 20px;
+}
+
+.card {
+    background-color: var(--blanco);/* Establece el fondo de la tarjeta en blanco. */
+    border-radius: 15px;/* Redondea las esquinas de la tarjeta. */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.137);
+    overflow: hidden;/* Asegura que el contenido no se desborde de la tarjeta. */
+    transition: transform 0.3s ease;/* Prepara la tarjeta para una animación de escala al pasar el ratón. */
+    /* Organiza el contenido de la tarjeta verticalmente. */
+    display: flex;
+    flex-direction: column;
+    /* Añade espacio interno a la tarjeta. */
+    padding: 1.2rem; /* Añadido padding para dar espacio interno */
+    width: 80%;/* Reduce el ancho de las tarjetas */
+    margin-bottom: 1.2rem;   
+}
+
+.card:hover {
+    /* Aumenta ligeramente el tamaño de la tarjeta al pasar el ratón sobre ella. */
+    transform: scale(1.05);
+}
+
+.card-img {
+    /* Hace que la imagen ocupe todo el ancho de la tarjeta y tenga una 
+    altura fija, manteniendo la proporción. */
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px; /* Redondea las esquinas de la imagen. */
+    margin-bottom: 1rem; /*Añade espacio debajo de la imagen. */
+}
+
+.card-body {
+    padding: 1.5rem;/* Añade espacio interno al cuerpo de la tarjeta. */
+}
+/* hace pequeño a la palabra "regular", y al precio de este */
+.card-body .regular ,
+.price-regular{
+    font-size: 1.4rem;
+}
+
+.card-body h5 {
+    font-size: 1.6rem;
+    color: var(--letra-gris);
+    margin: 0;
+}
+
+.card-title {
+    display: flex;
+    justify-content: space-between; /* Esto alinea el texto y el icono a los extremos */
+    align-items: center;
+}
+.btn-like {
+    background: none; /* Elimina el fondo predeterminado del botón */
+    border: none; /* Elimina el borde del botón */
+    cursor: pointer; /* Cambia el cursor cuando pasas sobre el botón */
+    padding: 0; /* Elimina el padding del botón */
+    margin-left: 1rem; /* Añade margen a la izquierda para separar del texto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn-like .material-symbols-outlined {
+    color: var(--primario); /* Aplica color al icono */
+    font-size: 2.4rem; /* Ajusta el tamaño del icono */
+    transition: color 0.3s ease; /* Transición para cambios de color */
+}
+.btn-like:hover .material-symbols-outlined {
+    color: var(--blanco);
+    background: #0A5EFB;
+    border-radius: 2rem;
+}
+
+
+/* Establece el estilo para la descripción del producto. */
+.card-text {
+    font-size: 1.2rem;
+    color: var(--negro);
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+/* Organiza los precios en una línea con espacio entre ellos. */
+.price-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem; /* Ajusta según sea necesario */
+    margin-bottom: 1.5rem;
+}
+
+.online .price-online {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+/* acha el precio regular y lo colorea en gris. */
+.price-regular {
+    text-decoration: line-through;
+    color: var(--letra-gris);
+    font-size: 1.2rem;
+    
+}
+
+.cuatro-columnas .card-body .online{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.price-online {
+    color: var(--primario);
+}
+
+.recoge-tienda{
+    font-size: 1.2rem;
+}
+
+
+
+.cuatro-columnas .card-body p i{
+    color:var(--primario) ;
+    background: rgba(0, 64, 255, 0.268);
+    border-radius: 2rem;
+}
+
+
+
+
+
+.btn {
+    /* Centra el contenido del botón. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Hace que el botón ocupe casi todo el
+     ancho de la tarjeta. */
+    width: calc(95% - 1rem); /* Ajusta el ancho según tu preferencia */
+    padding: 0.5rem;
+    /* Establece el estilo inicial del botón. */
+    background-color: var(--blanco);
+    border-color: var(--primario);
+    color: var(--primario);
+    margin: 1rem auto;
+    /* Redondea las esquinas del botón. */
+    border-radius: 25px;
+    cursor: pointer;
+    /* Prepara el botón para una transición suave
+     al pasar el ratón. */
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+}
+/* Cambia el color del botón al pasar el ratón sobre él. */
+.btn:hover {
+    background-color: var(--primario);
+    color: var(--blanco);
+
+}
+/* Alinea verticalmente los iconos de Material Symbols con el texto. */
+.material-symbols-outlined {
+    vertical-align: middle;
+}
+
+
+/* ====================ESTILOS PARA EL ASIDE=============== */
+
+
+.page-container {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.filtros-sidebar {
+    width: 20rem;
+    height: 70rem;
+    margin-left: 1rem;
+    background-color: var(--blanco);
+    padding: 1.5rem;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.sidebar-image {
+    margin-top: 2rem;
+    text-align: center;
+}
+.sidebar-image img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.filtros-sidebar hr {
+    color: var(--linea-gris);
+    border-top-width: 0.2px; /* Cambia el grosor a 3 píxeles */
+}
+
+
+.filtros-sidebar h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--negro);
+}
+.filtros-sidebar img{
+    display: flex;
+    justify-content: end;
+}
+
+.filtro {
+    margin-bottom: 1.5rem;
+}
+
+.filtro h3 {
+    font-size: 1.4rem;
+    color: var(--negro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.filtro-toggle {
+    cursor: pointer;
+    user-select: none;
+}
+
+.filtro.active .filtro-content {
+    display: block;
+}
+.filtro.active .arrow {
+    transform: rotate(180deg);
+}
+
+
+.arrow {
+    color: var(--primario);
+    transition: transform 0.5s ease;
+}
+
+.filtro-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.filtro-toggle.active + .filtro-content {
+    max-height: 500px; /* Ajusta este valor según la cantidad de contenido que esperas */
+    transition: max-height 0.5s ease-in;
+}
+
+.filtro-search {
+    width: 94%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid var(--letra-gris);
+    border-radius: 5px;
+    font-size: 1.3rem;
+}
+
+.filtro label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--negro);
+}
+
+.price-range {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+.min-max{
+    font-size: 1rem;
+}
+
